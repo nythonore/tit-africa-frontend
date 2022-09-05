@@ -1,0 +1,8 @@
+TODO
+----
+
+- NavBar Component
+- Hero Container
+- Solutions Container
+- Services Container
+- SEO Meta

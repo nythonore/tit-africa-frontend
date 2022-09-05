@@ -9,7 +9,7 @@
 		@apply transform transition-all delay-100 duration-200 ease-in;
 	}
 
-	.process-card-shadow {
+	.card-shadow {
 		box-shadow: 0 2px 14px 5px rgb(20 20 20 / 5%);
 	}
 }
