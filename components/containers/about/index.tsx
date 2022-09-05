@@ -60,7 +60,7 @@ export const About = () => {
 
 					<div className='flex basis-1/2 gap-3'>
 						<div className='w-1/2 space-y-3'>
-							<div className='h-40 w-full cursor-pointer overflow-hidden rounded-md md:h-52'>
+							<div className='h-40 w-full overflow-hidden rounded-md md:h-52'>
 								<img
 									alt=''
 									src='https://preview.colorlib.com/theme/roberto/img/bg-img/x13.jpg.pagespeed.ic.CSN0p413eV.webp'
@@ -68,7 +68,7 @@ export const About = () => {
 								/>
 							</div>
 
-							<div className='h-40 w-full cursor-pointer overflow-hidden rounded-md md:h-52'>
+							<div className='h-40 w-full overflow-hidden rounded-md md:h-52'>
 								<img
 									alt=''
 									src='https://preview.colorlib.com/theme/roberto/img/bg-img/x14.jpg.pagespeed.ic.thL2W_FV3m.webp'
@@ -77,7 +77,7 @@ export const About = () => {
 							</div>
 						</div>
 
-						<div className='min-h-full w-1/2 cursor-pointer overflow-hidden'>
+						<div className='min-h-full w-1/2 overflow-hidden'>
 							<img
 								alt=''
 								src='https://preview.colorlib.com/theme/roberto/img/bg-img/x15.jpg.pagespeed.ic.oqkgdxQkRv.webp'
@@ -91,7 +91,7 @@ export const About = () => {
 					{process.map((process, key) => (
 						<div
 							key={key}
-							className='process-card-shadow group cursor-pointer bg-white px-2 py-6'
+							className='process-card-shadow group bg-white px-2 py-6'
 						>
 							{process.icon}
 
