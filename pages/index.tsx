@@ -1,12 +1,13 @@
 import type { NextPage } from 'next';
 import { AppLayout } from '../components/layouts';
 
-import { Partner } from '../components/containers/partner';
+import { About, Customer } from '../components/containers';
 
 const Home: NextPage = () => {
 	return (
 		<AppLayout>
-			<Partner />
+			<About />
+			<Customer />
 		</AppLayout>
 	);
 };

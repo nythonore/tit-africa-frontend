@@ -3,7 +3,7 @@ import {
 	ChevronDoubleRightIcon,
 } from '@heroicons/react/24/outline';
 
-const partners = [
+const customers = [
 	'http://titafrica.tech/img/image--077.jpg',
 	'http://titafrica.tech/img/image--068.png',
 	'http://titafrica.tech/img/image--070.jpg',
@@ -17,19 +17,19 @@ const partners = [
 	'http://titafrica.tech/img/image--064.png',
 ];
 
-export const Partner = () => {
+export const Customer = () => {
 	const handleScrollLeft = () => {
-		const slider = document.getElementById('partner-slider');
+		const slider = document.getElementById('customer-slider');
 		if (slider) slider.scrollLeft = slider.scrollLeft - 180;
 	};
 
 	const handleScrollRight = () => {
-		const slider = document.getElementById('partner-slider');
+		const slider = document.getElementById('customer-slider');
 		if (slider) slider.scrollLeft = slider.scrollLeft + 180;
 	};
 
 	return (
-		<section id='partner' className='py-10'>
+		<section id='customers' className='py-10'>
 			<div className='container flex items-center gap-5 md:gap-10'>
 				<div>
 					<button onClick={handleScrollLeft}>
@@ -38,18 +38,18 @@ export const Partner = () => {
 				</div>
 
 				<div
-					id='partner-slider'
+					id='customer-slider'
 					className='flex grow flex-nowrap gap-6 overflow-hidden scroll-smooth md:gap-10'
 				>
-					{partners.map((partner, key) => (
+					{customers.map((customer, key) => (
 						<div
 							key={key}
 							className='h-[130px] w-[130px] flex-shrink-0 p-4 md:p-6'
 						>
 							{/* TODO: Replace with next image component */}
 							<img
-								alt={partner}
-								src={partner}
+								alt={customer}
+								src={customer}
 								className='h-full w-full object-contain'
 							/>
 						</div>
