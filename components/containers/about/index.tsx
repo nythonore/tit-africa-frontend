@@ -42,7 +42,7 @@ export const About = () => {
 					<div className='basis-1/2'>
 						<p className='text-base uppercase text-success'>About Us</p>
 
-						<h2 className='mt-3 text-4xl font-medium'>
+						<h2 className='mt-2 text-4xl font-semibold'>
 							Welcome To T-IT Africa
 						</h2>
 
@@ -87,19 +87,21 @@ export const About = () => {
 					</div>
 				</div>
 
-				<div className='mt-14 grid grid-cols-2 gap-5 md:grid-cols-6'>
-					{process.map((process, key) => (
-						<div
-							key={key}
-							className='process-card-shadow group bg-white px-2 py-6'
-						>
-							{process.icon}
+				<div className='mt-14'>
+					<div className='grid grid-cols-2 gap-5 md:grid-cols-6'>
+						{process.map((process, key) => (
+							<div
+								key={key}
+								className='process-card-shadow group z-10 bg-white px-2 py-6'
+							>
+								{process.icon}
 
-							<p className='hover mt-5 text-center text-sm font-semibold text-slate-800 group-hover:text-success'>
-								{process.label}
-							</p>
-						</div>
-					))}
+								<p className='hover mt-5 text-center text-sm font-bold text-slate-800 group-hover:text-success'>
+									{process.label}
+								</p>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</section>

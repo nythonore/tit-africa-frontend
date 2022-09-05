@@ -7,7 +7,6 @@ const data = [
 		title: 'Our Mission',
 		desc: 'Our mission is to take advantage of our broad IT experience to deliver tangible business results enabling our clients in industry and government to profit from the advanced use of technology.',
 	},
-	,
 	{
 		title: 'Our Values',
 		desc: 'Quality – we do the right thing right. Leadership – we shape a better future. Integrity – we really mean what we say. Collaboration – we leverage collective genius. Innovation – we enhance and create new things.',
@@ -32,11 +31,11 @@ export const Info = () => {
 							{data.map((value, key) => (
 								<div key={key}>
 									<h2 className='text-2xl font-medium text-white'>
-										{value?.title}
+										{value.title}
 									</h2>
 
-									<p className='mt-4 text-base font-light leading-8 text-slate-200'>
-										{value?.desc}
+									<p className='mt-4 text-base font-light leading-8 text-slate-300'>
+										{value.desc}
 									</p>
 								</div>
 							))}
