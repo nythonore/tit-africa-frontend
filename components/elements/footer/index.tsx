@@ -22,12 +22,14 @@ export const Footer = () => {
 			<div className='container'>
 				<div className='grid grid-cols-1 gap-10 py-12 md:grid-cols-3'>
 					<div>
-						<Image
-							alt='T-IT Africa'
-							src='/logo-white.png'
-							cover={false}
-							className='h-14 w-[140px]'
-						/>
+						<div>
+							<Image
+								alt='T-IT Africa'
+								src='/logo-white.png'
+								cover={false}
+								className='h-14 w-[120px]'
+							/>
+						</div>
 
 						<p className='mt-6 text-sm font-light leading-6 text-slate-300'>
 							T-IT AFRICA finds its root in CODISYS that operated in Rwanda from
