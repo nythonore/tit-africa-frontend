@@ -1,8 +1,5 @@
 TODO
 ----
 
-- NavBar Component
-- Hero Container
 - Contact Container
-- Newsletter Form
 - SEO Meta

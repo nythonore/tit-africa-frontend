@@ -28,7 +28,7 @@ export const Footer = () => {
 								alt='T-IT Africa'
 								src='/logo-white.png'
 								cover={false}
-								className='h-14 w-[140px]'
+								className='h-12 w-[130px]'
 							/>
 						</div>
 

@@ -3,6 +3,7 @@ import { AppLayout } from '../components/layouts';
 
 import {
 	About,
+	Contact,
 	Customer,
 	Hero,
 	Info,
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
 			<Info />
 			<Solution />
 			<Service />
+			<Contact />
 			<Customer />
 		</AppLayout>
 	);

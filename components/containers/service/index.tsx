@@ -29,7 +29,7 @@ const data = [
 
 export const Service = () => {
 	return (
-		<section id='services' className='py-14'>
+		<section id='services' className='bg-[#F7FAFC] py-14'>
 			<div className='container'>
 				<div>
 					<h2 className='mb-4 text-center text-2xl font-semibold text-secondary'>

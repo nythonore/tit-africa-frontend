@@ -48,7 +48,7 @@ export const NavBar = () => {
 								alt='T-IT Africa'
 								src='/logo.svg'
 								cover={false}
-								className='h-10 w-[120px] cursor-pointer'
+								className='h-10 w-[130px] cursor-pointer'
 							/>
 						</Link>
 
