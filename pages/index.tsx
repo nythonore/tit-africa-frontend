@@ -4,6 +4,7 @@ import { AppLayout } from '../components/layouts';
 import {
 	About,
 	Customer,
+	Hero,
 	Info,
 	Service,
 	Solution,
@@ -12,6 +13,7 @@ import {
 const Home: NextPage = () => {
 	return (
 		<AppLayout>
+			<Hero />
 			<About />
 			<Info />
 			<Solution />

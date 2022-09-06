@@ -36,7 +36,7 @@ const process = [
 
 export const About = () => {
 	return (
-		<section id='about-us' className='py-16'>
+		<section id='about-us' className='py-14'>
 			<div className='container'>
 				<div className='flex flex-col gap-12 md:flex-row md:items-center'>
 					<div className='basis-1/2'>

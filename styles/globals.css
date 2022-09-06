@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 @layer components {
 	.hover {
 		@apply transform transition-all delay-100 duration-200 ease-in;
