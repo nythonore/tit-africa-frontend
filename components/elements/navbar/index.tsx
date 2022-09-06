@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Image } from '../image';
 
 export const NavBar = () => {
 	const menus = [
@@ -31,7 +32,7 @@ export const NavBar = () => {
 	return (
 		<>
 			<div className='bg-primary'>
-				<div className='container py-5'>
+				<div className='container py-6'>
 					<div className='flex gap-5 text-sm font-medium text-white'>
 						<p>info@titafrica.tech</p>
 						<p>(250) 788 312 664</p>
@@ -43,17 +44,18 @@ export const NavBar = () => {
 				<div className='container py-6'>
 					<div className='flex items-center justify-between'>
 						<Link href='/'>
-							<img
+							<Image
 								alt='T-IT Africa'
-								src='http://titafrica.tech/logo/tit_logo.svg'
-								className='cursor-pointer w-28'
+								src='/logo.svg'
+								cover={false}
+								className='h-10 w-[120px] cursor-pointer'
 							/>
 						</Link>
 
 						<div className='flex gap-6'>
 							{menus.map((menu, key) => (
 								<Link key={key} href={menu.path}>
-									<span className='hover cursor-pointer text-[15px] font-medium text-primary hover:text-success'>
+									<span className='hover cursor-pointer text-[15px] font-medium text-secondary hover:text-success'>
 										{menu.label}
 									</span>
 								</Link>

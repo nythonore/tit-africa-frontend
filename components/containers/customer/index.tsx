@@ -2,19 +2,20 @@ import {
 	ChevronDoubleLeftIcon,
 	ChevronDoubleRightIcon,
 } from '@heroicons/react/24/outline';
+import { Image } from '../../elements';
 
 const customers = [
-	'http://titafrica.tech/img/image--077.jpg',
-	'http://titafrica.tech/img/image--068.png',
-	'http://titafrica.tech/img/image--070.jpg',
-	'http://titafrica.tech/img/image--071.png',
-	'http://titafrica.tech/img/image--075.jpg',
-	'http://titafrica.tech/img/image--060.png',
-	'http://titafrica.tech/img/image--080.png',
-	'http://titafrica.tech/img/image--079.jpg',
-	'http://titafrica.tech/img/image--066.png',
-	'http://titafrica.tech/img/image--062.jpg',
-	'http://titafrica.tech/img/image--064.png',
+	'/customer/1.jpeg',
+	'/customer/2.png',
+	'/customer/3.jpeg',
+	'/customer/4.png',
+	'/customer/5.jpeg',
+	'/customer/6.png',
+	'/customer/7.png',
+	'/customer/8.jpeg',
+	'/customer/9.png',
+	'/customer/10.jpeg',
+	'/customer/11.png',
 ];
 
 export const Customer = () => {
@@ -46,11 +47,11 @@ export const Customer = () => {
 							key={key}
 							className='h-[130px] w-[130px] flex-shrink-0 p-4 md:p-6'
 						>
-							{/* TODO: Replace with next image component */}
-							<img
+							<Image
 								alt={customer}
 								src={customer}
-								className='h-full w-full object-contain'
+								cover={false}
+								className='h-full w-full'
 							/>
 						</div>
 					))}

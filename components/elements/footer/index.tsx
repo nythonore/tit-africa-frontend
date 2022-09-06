@@ -1,3 +1,5 @@
+import { Image } from '../image';
+
 const contacts = [
 	{
 		label: 'Address',
@@ -20,11 +22,11 @@ export const Footer = () => {
 			<div className='container'>
 				<div className='grid grid-cols-1 gap-10 py-12 md:grid-cols-3'>
 					<div>
-						{/* TODO: Replace with next image component */}
-						<img
-							alt='TIT-Africa'
-							src='http://titafrica.tech/logo/tit_bottom_logo.png'
-							className='w-40'
+						<Image
+							alt='T-IT Africa'
+							src='/logo-white.png'
+							cover={false}
+							className='h-14 w-[180px]'
 						/>
 
 						<p className='mt-6 text-sm font-light leading-6 text-slate-300'>

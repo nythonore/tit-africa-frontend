@@ -10,7 +10,7 @@ export const Card = (props: CardProps) => {
 
 	return (
 		<div className='border border-slate-200 px-5 py-6'>
-			<h2 className='text-[15px] font-bold uppercase text-primary'>{title}</h2>
+			<h2 className='text-[15px] font-bold uppercase text-secondary'>{title}</h2>
 
 			<ul className='mt-3 divide-y divide-slate-200'>
 				{data.map((value, key) => (

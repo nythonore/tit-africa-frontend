@@ -32,7 +32,7 @@ export const Service = () => {
 		<section id='services' className='py-14'>
 			<div className='container'>
 				<div>
-					<h2 className='mb-4 text-center text-2xl font-semibold text-primary'>
+					<h2 className='mb-4 text-center text-2xl font-semibold text-secondary'>
 						Our Services
 					</h2>
 

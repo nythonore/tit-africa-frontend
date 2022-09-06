@@ -6,6 +6,7 @@ import {
 	DocumentIcon,
 	GlobeAltIcon,
 } from '@heroicons/react/24/outline';
+import { Image } from '../../elements';
 
 const process = [
 	{
@@ -42,11 +43,11 @@ export const About = () => {
 					<div className='basis-1/2'>
 						<p className='text-base uppercase text-success'>About Us</p>
 
-						<h2 className='mt-2 text-4xl font-semibold text-primary'>
+						<h2 className='mt-2 text-4xl font-semibold text-secondary'>
 							Welcome To T-IT Africa
 						</h2>
 
-						<p className='my-8 text-xl leading-9 text-slate-800 md:my-12'>
+						<p className='my-8 text-xl leading-8 text-slate-800 md:my-12'>
 							T-IT AFRICA finds its root in CODISYS that operated in Rwanda from
 							2003 to 2009. The first carried out 70% of activities and
 							contracts in the area of Software Development, Software Support,
@@ -61,26 +62,26 @@ export const About = () => {
 					<div className='flex basis-1/2 gap-3'>
 						<div className='w-1/2 space-y-3'>
 							<div className='h-40 w-full overflow-hidden rounded-md md:h-52'>
-								<img
-									alt=''
-									src='https://preview.colorlib.com/theme/roberto/img/bg-img/x13.jpg.pagespeed.ic.CSN0p413eV.webp'
+								<Image
+									alt='banner 1'
+									src='/banner/1.avif'
 									className='hover h-full w-full rounded-md object-cover hover:scale-110'
 								/>
 							</div>
 
 							<div className='h-40 w-full overflow-hidden rounded-md md:h-52'>
-								<img
-									alt=''
-									src='https://preview.colorlib.com/theme/roberto/img/bg-img/x14.jpg.pagespeed.ic.thL2W_FV3m.webp'
+								<Image
+									alt='banner 2'
+									src='/banner/2.avif'
 									className='hover h-full w-full rounded-md object-cover hover:scale-110'
 								/>
 							</div>
 						</div>
 
 						<div className='min-h-full w-1/2 overflow-hidden'>
-							<img
-								alt=''
-								src='https://preview.colorlib.com/theme/roberto/img/bg-img/x15.jpg.pagespeed.ic.oqkgdxQkRv.webp'
+							<Image
+								alt='banner 3'
+								src='/banner/3.avif'
 								className='hover h-full w-full rounded-md object-cover hover:scale-110'
 							/>
 						</div>

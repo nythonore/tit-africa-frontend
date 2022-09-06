@@ -43,7 +43,7 @@ export const Solution = () => {
 		<section id='solutions' className='bg-[#F7FAFC] py-14'>
 			<div className='container'>
 				<div>
-					<h2 className='mb-4 text-center text-3xl font-semibold text-primary'>
+					<h2 className='mb-4 text-center text-3xl font-semibold text-secondary'>
 						IT Solutions
 					</h2>
 
