@@ -40,7 +40,7 @@ export const NavBar = () => {
 				</div>
 			</div>
 
-			<nav className='sticky top-0 z-50 w-full bg-white shadow-md'>
+			<nav className='z-50 w-full bg-white shadow-md md:sticky md:top-0'>
 				<div className='container py-6'>
 					<div className='flex flex-col md:flex-row md:items-center md:justify-between'>
 						<Link href='/'>

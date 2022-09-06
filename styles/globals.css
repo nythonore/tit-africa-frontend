@@ -16,4 +16,12 @@ html {
 	.card-shadow {
 		box-shadow: 0 2px 14px 5px rgb(20 20 20 / 5%);
 	}
+
+	.btn {
+		@apply hover appearance-none text-sm font-medium outline-none ring-0 focus:ring-0;
+	}
+
+	.form-control {
+		@apply hover h-12 appearance-none indent-3 text-sm text-secondary outline-none ring-0 placeholder:text-slate-500 focus:ring-0;
+	}
 }
