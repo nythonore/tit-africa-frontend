@@ -10,27 +10,27 @@ import { Image } from '../../elements';
 
 const process = [
 	{
-		icon: <CircleStackIcon className='mx-auto h-10 w-10 text-success' />,
+		icon: <CircleStackIcon className='mx-auto h-10 w-10 text-primary' />,
 		label: 'Products & Processes',
 	},
 	{
-		icon: <TableCellsIcon className='mx-auto h-10 w-10 text-success' />,
+		icon: <TableCellsIcon className='mx-auto h-10 w-10 text-primary' />,
 		label: 'Request A Demo',
 	},
 	{
-		icon: <ReceiptPercentIcon className='mx-auto h-10 w-10 text-success' />,
+		icon: <ReceiptPercentIcon className='mx-auto h-10 w-10 text-primary' />,
 		label: 'Request A Qoute',
 	},
 	{
-		icon: <DevicePhoneMobileIcon className='mx-auto h-10 w-10 text-success' />,
+		icon: <DevicePhoneMobileIcon className='mx-auto h-10 w-10 text-primary' />,
 		label: 'Give Us A Call',
 	},
 	{
-		icon: <DocumentIcon className='mx-auto h-10 w-10 text-success' />,
+		icon: <DocumentIcon className='mx-auto h-10 w-10 text-primary' />,
 		label: 'Our Brand Manual',
 	},
 	{
-		icon: <GlobeAltIcon className='mx-auto h-10 w-10 text-success' />,
+		icon: <GlobeAltIcon className='mx-auto h-10 w-10 text-primary' />,
 		label: 'Company Profile',
 	},
 ];
@@ -41,7 +41,7 @@ export const About = () => {
 			<div className='container'>
 				<div className='flex flex-col gap-12 md:flex-row md:items-center'>
 					<div className='basis-1/2'>
-						<p className='text-base uppercase text-success'>About Us</p>
+						<p className='text-base uppercase text-primary'>About Us</p>
 
 						<h2 className='mt-2 text-4xl font-semibold text-secondary'>
 							Welcome To T-IT Africa
@@ -55,7 +55,7 @@ export const About = () => {
 						</p>
 
 						<p className='text-lg font-medium text-slate-800'>
-							Manager: <span className='text-success'>Michen Taylor</span>
+							Manager: <span className='text-primary'>Michen Taylor</span>
 						</p>
 					</div>
 
@@ -97,7 +97,7 @@ export const About = () => {
 							>
 								{process.icon}
 
-								<p className='hover mt-5 text-center text-sm font-bold text-slate-800 group-hover:text-success'>
+								<p className='hover mt-5 text-center text-sm font-bold text-slate-800 group-hover:text-primary'>
 									{process.label}
 								</p>
 							</div>

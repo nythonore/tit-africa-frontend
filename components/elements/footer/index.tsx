@@ -26,7 +26,7 @@ export const Footer = () => {
 							alt='T-IT Africa'
 							src='/logo-white.png'
 							cover={false}
-							className='h-14 w-[180px]'
+							className='h-14 w-[140px]'
 						/>
 
 						<p className='mt-6 text-sm font-light leading-6 text-slate-300'>

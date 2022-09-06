@@ -42,7 +42,7 @@ export const NavBar = () => {
 
 			<nav className='sticky top-0 z-50 w-full bg-white shadow-md'>
 				<div className='container py-6'>
-					<div className='flex items-center justify-between'>
+					<div className='flex flex-col md:flex-row md:items-center md:justify-between'>
 						<Link href='/'>
 							<Image
 								alt='T-IT Africa'
@@ -52,10 +52,10 @@ export const NavBar = () => {
 							/>
 						</Link>
 
-						<div className='flex gap-6'>
+						<div className='mt-6 flex flex-wrap gap-3 md:mt-0 md:gap-6'>
 							{menus.map((menu, key) => (
 								<Link key={key} href={menu.path}>
-									<span className='hover cursor-pointer text-[15px] font-medium text-secondary hover:text-success'>
+									<span className='hover cursor-pointer text-[15px] font-medium text-secondary hover:text-primary'>
 										{menu.label}
 									</span>
 								</Link>
