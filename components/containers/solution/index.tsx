@@ -40,7 +40,7 @@ const data = [
 
 export const Solution = () => {
 	return (
-		<section id='solutions' className='bg-[#EFF0FF] py-16'>
+		<section id='solutions' className='py-14'>
 			<div className='container'>
 				<div>
 					<h2 className='mb-4 text-center text-3xl font-semibold text-primary'>
@@ -50,7 +50,7 @@ export const Solution = () => {
 					<LineBreaker />
 				</div>
 
-				<div className='mt-12 grid grid-cols-1 md:grid-cols-3'>
+				<div className='mt-10 grid grid-cols-1 md:grid-cols-3'>
 					{data.map((element, key) => (
 						<Card key={key} {...element} />
 					))}

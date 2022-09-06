@@ -29,17 +29,17 @@ const data = [
 
 export const Service = () => {
 	return (
-		<section id='services' className='py-16'>
+		<section id='services' className='bg-[#F7FAFC] py-14'>
 			<div className='container'>
 				<div>
-					<h2 className='mb-4 text-center text-3xl font-semibold text-primary'>
-						Services
+					<h2 className='mb-4 text-center text-2xl font-semibold text-primary'>
+						Our Services
 					</h2>
 
 					<LineBreaker />
 				</div>
 
-				<div className='mt-12 grid grid-cols-1 md:grid-cols-2'>
+				<div className='mx-auto mt-10 grid grid-cols-1 md:w-4/5 md:grid-cols-2'>
 					{data.map((element, key) => (
 						<Card key={key} {...element} />
 					))}
