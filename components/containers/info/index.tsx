@@ -17,12 +17,12 @@ export const Info = () => {
 	return (
 		<section id='info'>
 			<div className='flex flex-col md:flex-row'>
-				<div className='hidden basis-1/2 md:block'>
-					<img
+				<div className='hidden basis-1/2 bg-[url(https://preview.colorlib.com/theme/roberto/img/bg-img/x13.jpg.pagespeed.ic.CSN0p413eV.webp)] bg-no-repeat bg-cover bg-center md:block'>
+					{/* <img
 						alt='banner'
-						src='https://preview.colorlib.com/theme/roberto/img/bg-img/x13.jpg.pagespeed.ic.CSN0p413eV.webp'
+						src=''
 						className='h-full w-full object-cover'
-					/>
+					/> */}
 				</div>
 
 				<div className='basis-1/2 bg-primary py-16'>
