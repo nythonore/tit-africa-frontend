@@ -40,7 +40,7 @@ const data = [
 
 export const Solution = () => {
 	return (
-		<section id='solutions' className='py-14'>
+		<section id='solutions' className='bg-[#F7FAFC] py-14'>
 			<div className='container'>
 				<div>
 					<h2 className='mb-4 text-center text-3xl font-semibold text-primary'>

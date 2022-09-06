@@ -94,7 +94,7 @@ export const Hero = () => {
 			<div
 				className='flex h-[60vh] w-full items-center gap-2 md:gap-6'
 				style={{
-					background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 20.83%, rgba(0, 0, 0, 0.85) 100%), url(${slides[activeSlideIndex].cover}) no-repeat`,
+					background: `linear-gradient(180deg, rgba(0, 0, 0, 0.20) 20.83%, rgba(0, 0, 0, 0.80) 100%), url(${slides[activeSlideIndex].cover}) no-repeat`,
 					backgroundPosition: 'center',
 					backgroundAttachment: 'fixed',
 				}}

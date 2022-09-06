@@ -29,7 +29,7 @@ export const Customer = () => {
 	};
 
 	return (
-		<section id='customers' className='bg-[#F7FAFC] py-10'>
+		<section id='customers' className='py-10'>
 			<div className='container flex items-center gap-5 md:gap-10'>
 				<div>
 					<button onClick={handleScrollLeft}>
