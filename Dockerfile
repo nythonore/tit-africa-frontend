@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
 
-RUN yarn install --production
+RUN yarn install
 
 # Copy app files
 COPY . .
@@ -27,7 +27,7 @@ COPY --from=builder /app/out /usr/share/nginx/html
 # Add your nginx.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port
+# Expose por t
 EXPOSE 80
 
 # Start nginx
