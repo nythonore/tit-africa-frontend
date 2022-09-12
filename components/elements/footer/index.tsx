@@ -1,23 +1,27 @@
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import clsx from 'clsx';
+import { useForm } from 'react-hook-form';
 import { Image } from '../image';
 
-const contacts = [
-	{
-		label: 'Address',
-		value:
-			'Kimihurura, Kigali Heights Building, 5th Floor, KG 7 Street, Kigali, Rwanda.',
-	},
-	{
-		label: 'Email',
-		value: 'info@titafrica.tech',
-	},
-	{
-		label: 'Support line',
-		value: '(+250)-788-312-664',
-	},
-];
-
 export const Footer = () => {
+	const { register, handleSubmit, formState } = useForm();
+
+	const contacts = [
+		{
+			label: 'Address',
+			value:
+				'Kimihurura, Kigali Heights Building, 5th Floor, KG 7 Street, Kigali, Rwanda.',
+		},
+		{
+			label: 'Email',
+			value: 'info@titafrica.tech',
+		},
+		{
+			label: 'Support line',
+			value: '(+250)-788-312-664',
+		},
+	];
+
 	return (
 		<footer className='bg-primary'>
 			<div className='container'>
@@ -28,7 +32,7 @@ export const Footer = () => {
 								alt='T-IT Africa'
 								src='/logo-white.png'
 								cover={false}
-								className='h-12 w-[130px]'
+								className='h-12 w-[120px]'
 							/>
 						</div>
 
@@ -67,20 +71,37 @@ export const Footer = () => {
 							Subscribe our newsletter gor get notification about new updates.
 						</p>
 
-						<form className='relative mt-6 flex items-center justify-between'>
-							<input
-								type='email'
-								placeholder='Enter your email'
-								className='form-control h-11 w-full rounded-full border-0'
-							/>
-
-							<button
-								type='button'
-								className='btn absolute right-2 flex h-9 w-9 items-center justify-center rounded-full bg-primary'
+						<div>
+							<form
+								onSubmit={handleSubmit(payload => alert('submited'))}
+								className='relative mt-6 flex items-center justify-between'
 							>
-								<PaperAirplaneIcon className='h-4 w-4 text-white' />
-							</button>
-						</form>
+								<input
+									type='email'
+									placeholder='Enter your email'
+									className={clsx(
+										'form-control h-11 w-full rounded-full border-2',
+										formState.errors.email
+											? 'border-red-600 focus:border-red-600'
+											: 'border-white'
+									)}
+									{...register('email', { required: true })}
+								/>
+
+								<button
+									type='submit'
+									className='btn absolute right-2 flex h-9 w-9 items-center justify-center rounded-full bg-primary'
+								>
+									<PaperAirplaneIcon className='h-4 w-4 text-white' />
+								</button>
+							</form>
+
+							{formState.errors.email && (
+								<span className='mt-2 block text-sm font-medium text-red-600'>
+									Email is required
+								</span>
+							)}
+						</div>
 					</div>
 				</div>
 

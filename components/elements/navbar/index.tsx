@@ -31,14 +31,14 @@ export const NavBar = () => {
 
 	return (
 		<>
-			<div className='bg-primary'>
+			{/* <div className='bg-primary'>
 				<div className='container py-6'>
 					<div className='flex gap-5 text-sm font-medium text-white'>
 						<p>info@titafrica.tech</p>
 						<p>(250) 788 312 664</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
 			<nav className='z-50 w-full bg-white shadow-md md:sticky md:top-0'>
 				<div className='container py-6'>
@@ -48,7 +48,7 @@ export const NavBar = () => {
 								alt='T-IT Africa'
 								src='/logo.svg'
 								cover={false}
-								className='h-10 w-[130px] cursor-pointer'
+								className='h-10 w-[110px] cursor-pointer'
 							/>
 						</Link>
 
