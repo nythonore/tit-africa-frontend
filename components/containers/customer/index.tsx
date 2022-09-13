@@ -50,8 +50,7 @@ export const Customer = () => {
 							<Image
 								alt={customer}
 								src={customer}
-								cover={false}
-								className='h-full w-full'
+								className='h-full w-full object-contain'
 							/>
 						</div>
 					))}
