@@ -6,6 +6,7 @@ import {
 	DocumentIcon,
 	GlobeAltIcon,
 } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 import { Image } from '../../elements';
 
 const process = [
@@ -91,16 +92,15 @@ export const About = () => {
 				<div className='mt-12'>
 					<div className='grid grid-cols-2 gap-5 md:grid-cols-6'>
 						{process.map((process, key) => (
-							<div
-								key={key}
-								className='card-shadow group z-10 bg-white px-2 py-6'
-							>
-								{process.icon}
+							<Link key={key} href='/#contact-us'>
+								<div className='card-shadow group z-10 cursor-pointer bg-white px-2 py-6'>
+									{process.icon}
 
-								<p className='hover mt-5 text-center text-sm font-bold text-slate-800 group-hover:text-primary'>
-									{process.label}
-								</p>
-							</div>
+									<p className='hover mt-5 text-center text-sm font-bold text-slate-800 group-hover:text-primary'>
+										{process.label}
+									</p>
+								</div>
+							</Link>
 						))}
 					</div>
 				</div>

@@ -1,11 +1,6 @@
-import { PaperAirplaneIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
-import { useForm } from 'react-hook-form';
 import { Image } from '../image';
 
 export const Footer = () => {
-	const { register, handleSubmit, formState } = useForm();
-
 	const contacts = [
 		{
 			label: 'Address',
@@ -19,6 +14,29 @@ export const Footer = () => {
 		{
 			label: 'Support line',
 			value: '(+250)-788-312-664',
+		},
+	];
+
+	const socials = [
+		{
+			icon: 'bi bi-meta',
+			link: '#',
+		},
+		{
+			icon: 'bi bi-twitter',
+			link: '#',
+		},
+		{
+			icon: 'bi bi-instagram',
+			link: '#',
+		},
+		{
+			icon: 'bi bi-google',
+			link: '#',
+		},
+		{
+			icon: 'bi bi-linkedin',
+			link: '#',
 		},
 	];
 
@@ -63,44 +81,22 @@ export const Footer = () => {
 
 					<div>
 						<h2 className='text-lg font-semibold text-white'>
-							Subscribe Newsletter
+							Follow Us On Social
 						</h2>
 
-						<p className='mt-6 text-sm font-light leading-6 text-slate-300'>
-							Subscribe our newsletter gor get notification about new updates.
-						</p>
-
-						<div>
-							<form
-								onSubmit={handleSubmit(payload => alert('submited'))}
-								className='relative mt-6 flex items-center justify-between'
-							>
-								<input
-									type='email'
-									placeholder='Enter your email'
-									className={clsx(
-										'form-control h-11 w-full rounded-full border-2',
-										formState.errors.email
-											? 'border-red-600 focus:border-red-600'
-											: 'border-white'
-									)}
-									{...register('email', { required: true })}
-								/>
-
-								<button
-									type='submit'
-									className='btn absolute right-2 flex h-9 w-9 items-center justify-center rounded-full bg-primary'
+						<ul className='mt-6 flex gap-3'>
+							{socials.map((social, key) => (
+								<a
+									key={key}
+									href={social.link}
+									target='_blank'
+									rel='noreferrer'
+									className='flex h-10 w-10 items-center justify-center rounded-full border-2 border-slate-300 text-sm text-slate-300'
 								>
-									<PaperAirplaneIcon className='h-4 w-4 text-white' />
-								</button>
-							</form>
-
-							{formState.errors.email && (
-								<span className='mt-2 block text-sm font-medium text-red-600'>
-									Email is required
-								</span>
-							)}
-						</div>
+									<i className={social.icon}></i>
+								</a>
+							))}
+						</ul>
 					</div>
 				</div>
 

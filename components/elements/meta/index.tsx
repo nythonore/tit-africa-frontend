@@ -1,24 +1,29 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 export const Meta = () => {
 	return (
-		<Head>
-			<meta charSet='utf-8' />
-			<meta name='viewport' content='width=device-width, initial-scale=1' />
-			<meta name='theme-color' content='#084D87' />
+		<>
+			<Head>
+				<meta charSet='utf-8' />
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<meta name='theme-color' content='#084D87' />
 
-			<meta name='robots' content='index, follow' />
-			<meta name='language' content='English' />
+				<meta name='robots' content='index, follow' />
+				<meta name='language' content='English' />
 
-			<meta name='title' content='T-IT Africa | Way Forward' />
+				<meta name='title' content='T-IT Africa | Way Forward' />
 
-			<meta property='og:title' content='T-IT Africa | Way Forward' />
-			<meta property='og:type' content='website' />
-			<meta property='og:url' content='https://titafrica.tech/' />
+				<meta property='og:title' content='T-IT Africa | Way Forward' />
+				<meta property='og:type' content='website' />
+				<meta property='og:url' content='https://titafrica.tech/' />
 
-			<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:card' content='summary_large_image' />
 
-			<title>T-IT Africa | Way Forward</title>
-		</Head>
+				<title>T-IT Africa | Way Forward</title>
+			</Head>
+
+			<Script src='https://smtpjs.com/v3/smtp.js' />
+		</>
 	);
 };
