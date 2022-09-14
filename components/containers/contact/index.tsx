@@ -2,22 +2,9 @@ import clsx from 'clsx';
 import { useForm } from 'react-hook-form';
 import { PaperAirplaneIcon } from '@heroicons/react/24/outline';
 import { LineBreaker } from '../../elements';
-import config from '../../../config';
 
 export const Contact = () => {
 	const { register, handleSubmit, formState } = useForm();
-
-	const handleSendEmail = async () => {
-		Email.send({
-			Host: config.MAIL_HOST,
-			Username: config.MAIL_USERNAME,
-			Password: config.MAIL_PASSWORD,
-			To: config.MAIL_USERNAME,
-			From: config.MAIL_USERNAME,
-			Subject: 'This is the subject',
-			Body: 'And this is the body',
-		}).then((message: string) => alert(message));
-	};
 
 	return (
 		<>
@@ -32,7 +19,11 @@ export const Contact = () => {
 					</div>
 
 					<div className='mx-auto mt-10 md:w-1/2'>
-						<form onSubmit={handleSubmit(payload => handleSendEmail())}>
+						<form
+							onSubmit={handleSubmit(payload =>
+								console.log('payload', payload)
+							)}
+						>
 							<div className='space-y-5'>
 								<div>
 									<input
@@ -115,8 +106,7 @@ export const Contact = () => {
 							</div>
 
 							<button
-								type='button'
-								onClick={handleSendEmail}
+								type='submit'
 								className='btn mt-7 flex h-12 w-full items-center justify-center gap-2 rounded-md bg-primary text-white'
 							>
 								<PaperAirplaneIcon className='h-5 w-5' />
